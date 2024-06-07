@@ -50,7 +50,9 @@ if(solve.includes(num)){
 }
 }
  return (
-    <div style={{margin:"0px auto"}} >
+   <>
+   <h1 style={{textAlign:"center",marginBottom:"10px"}}>Memory game</h1>
+     <div style={{margin:"0px auto"}} >
       {stage==="init" && <button onClick={handelstage}>Play Game</button>}
       {stage==="start" && 
       <div style={{width:"700px",gap:"5px",display:"grid",gridTemplateColumns:"repeat(4,50px)"}}>
@@ -70,6 +72,7 @@ if(solve.includes(num)){
         </div>
       }
     </div>
+   </>
   )
 }
 
